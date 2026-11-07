@@ -1,0 +1,7 @@
+# Keep this public repository limited to the intended config and templates.
+*
+!.gitignore
+!README.md
+!config.toml
+!templates/
+!templates/*.md
