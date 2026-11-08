@@ -3,5 +3,6 @@
 !.gitignore
 !README.md
 !config.toml
+!sync.sh
 !templates/
 !templates/*.md

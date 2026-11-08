@@ -26,6 +26,12 @@ ZenNotes manages this portable config and applies edits live. The available opti
 
 Copy the Markdown files in `templates/` into the templates folder configured for your vault. In my vault, that folder is `inbox/Templates`; choose or configure the appropriate folder in ZenNotes for your own vault.
 
+## Sync from my local setup
+
+After changing ZenNotes settings or templates in my vault, run `./sync.sh` from this repository. It validates `config.toml`, mirrors the Markdown templates, then commits and pushes only those files to `main`. It stops if the repository has other local changes or is out of sync with GitHub. Removed Markdown templates in the source folder are removed from this repository on the next sync.
+
+This publishes the current config and templates publicly, so review them before running the script.
+
 ## Personalize before using
 
 These are my current preferences, not universal defaults. Review `config.toml` before replacing your existing file, and adjust paths, key bindings, and preferences to suit your system. In particular, the `note.daily.today` command currently uses `Shift+Mod+Unidentified`, which may not be usable on every keyboard or platform.
